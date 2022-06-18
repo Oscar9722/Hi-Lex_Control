@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de componentes</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/componentes_styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-superior">
+            <div class="logo">
+                    <img src="Images/Logo_fondo.png"alt="Logo"/>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué buscas?"/>
+            </div>
+        </div> 
+        <div class="container-menu">
+            <div class="menu">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu" id="label-check">
+                    <i class="fas fa-bars icon-menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="Bitacora.html" id="selected">Bitácora</a></li>
+                        <li><a href="Plan_accion.html">Plan de acción</a></li>
+                        <li><a href="#">Inventario</a>
+                            <ul>
+                                <li><a href="Componentes.html">Componentes</a></li>
+                                <li><a href="Herramienta.html">Herramienta</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-icon">
+                <nav>
+                    <ul>
+                        <li><a href="#" id="notificaciones"></a></li>
+                        <li><a href="#" id="perfil"></a>
+                            <ul>
+                                <li><a href="#">Editar</a></li>
+                                <li><a href="#">Administrar</a></li>
+                                <li><a href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="pestanas">
+                <ul>
+                    <li id="buscar">Buscar</li>
+                    <li id="entrada">Registrar entrada</li>
+                    <li id="salida">Registrar salida</li>
+                </ul>
+            </div>
+            <div id="contenido">
+                <div id="contenido_buscar">
+                    <form action="">
+                        <label for="no_de_parte">
+                            <span>
+                                No. de parte
+                            </span>
+                            <input type="text" id="no_de_parte"/>
+                        </label>
+                        <label for="nombre">
+                            <span>
+                                Nombre
+                            </span>
+                            <input type="text" id="nombre"/>
+                        </label>
+                        <label for="categoria">
+                            <span>
+                                Categoría
+                            </span>
+                            <select name="categoria" id="">
+                                <option value="neumatico">Neumático</option>
+                                <option value="electrico">Eléctrico</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </label>
+                        <label for="subcategoria_neumatica">
+                            <span>
+                                Subcategoría
+                            </span>
+                            <select name="subcategoria_neumatica" id="">
+                                <option value="racores">Racores</option>
+                                <option value="cilindros">Cilindros</option>
+                                <option value="valvulas">Válvulas</option>
+                                <option value="maniful">Maniful</option>
+                                <option value="conector_rapido">Conectores rápidos</option>
+                                <option value="silenciadores">Silenciadores</option>
+                                <option value="accesorios">Accesorios</option>
+                            </select>
+                            <select name="subcategoria_electrica" id="" disabled>
+                                <option value="conector">Conectores rápidos</option>
+                                <option value="registros">Registros</option>
+                                <option value="terminales">Terminales</option>
+                                <option value="cable">Cables</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
